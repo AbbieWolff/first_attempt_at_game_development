@@ -19,7 +19,7 @@ health = (Character.attributes['health']) = Character.health = {'hp', 'status'}
 '''
 Health is the same as the character attribute of the same name, health.
 It is made up of two parts: HP (the numerical value) and health status (how the character feels, in words).
-HP is the total of energy, appetite and illness scores.
+HP is the total of energy, appetite and resistance to illness scores.
 '''
 
 hp = ('energy' + 'appetite' + 'resistance_to_illness')
@@ -59,18 +59,17 @@ create_min = 0
 create_current = []
 
 '''
-How should attribute and skill status updates be implemented in the actual game?
+How should attribute and health status updates be implemented in the actual game?
 1. Attributes are much more fluid and are the result of ongoing choices, behaviors, etc.
-2. Skills are static. Once you gain a skill level, you can't lose it on that character. 
+2. Skills are static. Once you gain a skill level, you can't lose it on that character.
 3. Status updates on skills should appear every time your character levels up (if they're well-written).
 4. Status updates on attributes should not appear every time. But how often? ... TBD
 5. Currently, status updates just print to the screen when 'activated' by the appropriate conditions.
 6. Once the UI has been created, change these status print functions to be some semblance of
 'show up on the UI in [specific way]'.
-7. The status updates for both attributes and skills must also be visible in the character menu when 
+7. The status updates for both attributes and skills must also be visible in the character menu when
 the relevant skill/attribute is hovered over(?) or selected. [MAKE UI & CHARACTER MENU...]
 '''
-
 
 # Character Level #
 level = Character.level = Character.attributes['level'] = {'survival' + 'social'}
@@ -437,3 +436,5 @@ elif hp_current >= (hp_max - 5):
  make colors correspond with distinct status states, not just health values?
  colors to show sickly green vs healthy red... or reverse? healthy green and blood red is standard... hm
 '''
+
+
