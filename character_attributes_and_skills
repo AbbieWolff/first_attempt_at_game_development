@@ -98,6 +98,33 @@ Obviously, when the character is starving, very sick or passed out, he/she can't
 I don't want this whole game to feel like grinding... :(
 '''
 
+'''
+Leveling:
+
+In games like Skyrim, you learn skills by doing them. I want to emulate that.
+
+However, as noted elsewhere, I want the character to have some available skill points at the start
+so they're not totally useless at surviving and talking to others.
+
+In Skyrim, they also have points to spend when you level up overall. I could also emulate that by
+using milestones in the (currently 0-100) rang of character level points.
+
+When the player reaches a level that is a multiple of five(?), she will receive 1 extra point to
+spend on any skill the player chooses.
+
+This should help mitigate some of the grinding/fatigue or dislike of practicing certain skills. For instance, if the player dislikes fishing or hunting in the game, it would be possible to always attribute
+the extra unattributed skill points available upon 'leveling' (reaching the next 5th level) to those skills.
+
+There should be a way to ensure that some skils compensate for others and that it is NOT
+necessary to practice every skill to survive.
+a. Add town/tribe NPCs that automatically adapt to be better at skills you're not so you can
+purchase or barter for the resources/labor you don't want to do.
+b. Do so without making it too easy or possible to rely entirely upon NPCs. You MUST have
+something to barter or some way to pay for their help, by doing your own skill-building.
+
+ADD GARDENING/GATHERING. DUH. WHY DIDN'T I THINK OF THIS EARLIER?!
+'''
+
 
 # Character skill sets: survival and social skills #
 survival = ['hunting'+ 'fishing' + 'forestry' + 'cooking' + 'woodworking' + 'crafting']
